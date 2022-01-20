@@ -1,7 +1,7 @@
 'use strict';
 
 const args = require('yargs').argv;
-const date = require('date-and-time');
+// const date = require('date-and-time');
 
 // function to get the latest portfolio value per token in USD
 var getPortfo = require('./getPortfo');
