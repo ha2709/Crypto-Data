@@ -1,10 +1,9 @@
 'use strict';
-// var request = require("request");
+
 const args = require('yargs').argv;
 const date = require('date-and-time');
 
-// var cryptoCompare;
-// var usdValues;
+
 
 // function to get the latest portfolio value per token in USD
 var getPortfo = require('./getPortfo');
@@ -35,24 +34,3 @@ else if (args.token != undefined && args.date != undefined){
     // console.log(47, args.token)
     getPortfoByTokenDate(args.token, args.date);
 }
-
-// Instructions, to run the command line program, install the below dependencies
-
-// npm install request 
-// npm install promise
-// npm install parser
-// npm install await
-// npm install yargs
-
-
-//Given no parameters, return the latest portfolio value per token in USD
-//node ./getCyptoData.js
-
-//Given a token, return the latest portfolio value for that token in USD
-//node ./getCyptoData.js --token=BTC
-
-//Given a date, return the portfolio value per token in USD on that date
-//node ./getCyptoData.js --date=4/3/2018
-
-//Given a date and a token, return the portfolio value of that token in USD on that date
-//node ./getCyptoData.js --date=4/3/2018 --token=BTC
