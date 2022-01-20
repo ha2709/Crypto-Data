@@ -26,20 +26,21 @@ Please take no more than 7 days to finish. Your answers should comprise of the f
   
 Commit your answers in a private Github repository(it's free) and add Zan(liangzan), Kyle(kyled7), Thanh(thanhnpp), Viswanath(viswanathkgp12) as collaborators. Inform us that it is done at zan@propine.com, kyle.dinh@propine.com, thanh.nguyen@propine.com, viswanath.kapavarapu@propine.com.
 
-### I choose the Factory Design Pattern, because it is parameterize the input:
-### In `Crypto-Data` folder, run command to install libraries:
+## Design
+I choose the `Factory Design Pattern`, because it parameterizes the input: base on the input param, it will call other function instead of block of code. These make code easy to scale, debug. 
+## In `Crypto-Data` folder, run command to install libraries:
 ```npm install request promise parser await yargs date-and-time```
 ### put the `transactions.csv` file into these folder
 ### Given no parameters, return the latest portfolio value per token in USD
-```node ./getCyptoData.js```
+```node ./main.js```
 
 ### Given a token, return the latest portfolio value for that token in USD
-```node ./getCyptoData.js --token=BTC```
+```node ./main.js --token=BTC```
 
 ### Given a date, return the portfolio value per token in USD on that date
-```node ./getCyptoData.js --date=10/25/2019```
+```node ./main.js --date=10/25/2019```
 
 ### Given a date and a token, return the portfolio value of that token in USD on that date
-```node ./getCyptoData.js --date=10/25/2019 --token=BTC```
+```node ./main.js --date=10/25/2019 --token=BTC```
 
-### I refer to source code from https://gist.github.com/devops-nfq/ccd1f4936ef46dc06631942afec394a3/revisions
+### Source code that [I used ](https://gist.github.com/devops-nfq/ccd1f4936ef46dc06631942afec394a3/revisions) for deriving the results
