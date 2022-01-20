@@ -1,4 +1,5 @@
 var request = require("request");
+
 function getUSDValues() {
   
     var cryptoURL = 'https://min-api.cryptocompare.com/data/pricemulti';

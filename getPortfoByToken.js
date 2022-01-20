@@ -1,4 +1,3 @@
-const args = require('yargs').argv;
 
 // function to fetch the USD Values from CryptoCompare
 var getLatestValPerTokenInUSD = require('./getLatestValPerTokenInUSD');

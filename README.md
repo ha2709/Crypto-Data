@@ -28,9 +28,10 @@ Commit your answers in a private Github repository(it's free) and add Zan(liangz
 
 ## Design
 I choose the `Factory Design Pattern`, because it parameterizes the input: base on the input param, it will call other function instead of block of code. These make code easy to scale, debug. 
+
+### put the [transactions.csv](https://s3-ap-southeast-1.amazonaws.com/static.propine.com/transactions.csv.zip) file into these folder
 ## In `Crypto-Data` folder, run command to install libraries:
 ```npm install request promise parser await yargs date-and-time```
-### put the `transactions.csv` file into these folder
 ### Given no parameters, return the latest portfolio value per token in USD
 ```node ./main.js```
 
@@ -43,4 +44,5 @@ I choose the `Factory Design Pattern`, because it parameterizes the input: base 
 ### Given a date and a token, return the portfolio value of that token in USD on that date
 ```node ./main.js --date=10/25/2019 --token=BTC```
 
-### Source code that [I used ](https://gist.github.com/devops-nfq/ccd1f4936ef46dc06631942afec394a3/revisions) for deriving the results
+## [Source code](https://gist.github.com/devops-nfq/ccd1f4936ef46dc06631942afec394a3/revisions) 
+that I used for deriving the results.

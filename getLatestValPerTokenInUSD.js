@@ -123,8 +123,6 @@ function getLatestValPerTokenInUSD(coin, date) {
                     }
                 }
             }
-            
-    
         });
         lineReader.on('close', function (line) {
             if ((coin === "" && date === "" ) ||(coin === "" && date != "")) {
