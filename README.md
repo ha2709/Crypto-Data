@@ -27,7 +27,7 @@ Please take no more than 7 days to finish. Your answers should comprise of the f
 Commit your answers in a private Github repository(it's free) and add Zan(liangzan), Kyle(kyled7), Thanh(thanhnpp), Viswanath(viswanathkgp12) as collaborators. Inform us that it is done at zan@propine.com, kyle.dinh@propine.com, thanh.nguyen@propine.com, viswanath.kapavarapu@propine.com.
 
 ## Design
-I choose the `Factory Design Pattern`, because it parameterizes the input: base on the input param, it will call other function instead of block of code. These make code easy to scale, debug. 
+I choose the `Factory Design Pattern`, because it parameterizes the input: base on the input param, it will call other function instead of block of code. These make code easy to scale, debug. It follows SOLID principle.
 
 ### put the [transactions.csv](https://s3-ap-southeast-1.amazonaws.com/static.propine.com/transactions.csv.zip) file into these folder
 ## In `Crypto-Data` folder, run command to install libraries:
@@ -45,4 +45,4 @@ I choose the `Factory Design Pattern`, because it parameterizes the input: base 
 ```node ./main.js --date=10/25/2019 --token=BTC```
 
 ## [Source code](https://gist.github.com/devops-nfq/ccd1f4936ef46dc06631942afec394a3/revisions) 
-that I used for deriving the results.
+that I used for deriving the results. I make some changes in calculation of balance based on deposit (+) and withdrawal (-) `amount`, `date`, `token`.

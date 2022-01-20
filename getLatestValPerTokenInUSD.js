@@ -63,7 +63,7 @@ function getLatestValPerTokenInUSD(coin, date) {
                     }
                 }
             }
-            // coin 
+            // token 
             else if (coin != "" && date === "") {   
                 if (jsonFromLine.token === coin) {
                     coinOutputArr.balance += jsonFromLine.amount;
