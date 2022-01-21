@@ -19,15 +19,12 @@ var getPortfoByTokenDate = require('./getPortfoByTokenDate')
 if(args.token === undefined && args.date === undefined){
     getPortfo();
 }
-else if (args.token != undefined && args.date === undefined){
-    getPortfoByToken(args.token)
-    // getPortfo(args.token);
+else if (args.token != undefined && args.date === undefined){    getPortfoByToken(args.token)
+ 
 }
 else if (args.date != undefined && args.token === undefined){
-    getPortfoByDate(args.date);
-    
+    getPortfoByDate(args.date);    
 }
 else if (args.token != undefined && args.date != undefined){
-    // console.log(47, args.token)
     getPortfoByTokenDate(args.token, args.date);
 }
