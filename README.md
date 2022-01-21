@@ -30,7 +30,7 @@ Commit your answers in a private Github repository(it's free) and add Zan(liangz
 I choose the `Factory Design Pattern`, because it parameterizes the input: base on the input param, it will call other function instead of block of code. These make code easy to scale, debug. It follows SOLID principle.
 
 ### put the [transactions.csv](https://s3-ap-southeast-1.amazonaws.com/static.propine.com/transactions.csv.zip) file into these folder
-This file is big, so the reading process is quite slow. I can make these process faster within 1-2 seconds or even within 0.2 second depend on requirements. 
+This file is big, so the reading process is quite slow. I can make these processes faster within 1-2 seconds or even within 0.2 second depending on requirements. 
 ## In `Crypto-Data` folder, run command to install libraries:
 ```npm install request promise parser await yargs date-and-time```
 ### Given no parameters, return the latest portfolio value per token in USD
